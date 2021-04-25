@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SpaceShips} from '../space-ships'
 
 @Component({
   selector: 'app-space-ships',
@@ -7,14 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpaceShipsComponent implements OnInit {
   
-  spaceShip={
-    modelName:'Boeing',
-    imageUrl: '../../assets/spaceship.png',
-    health: 70,
-    activeShield: true,
-    activeWeapon: false
-  }
-
+@Input() spaceShip: SpaceShips
   constructor() { }
 
   ngOnInit(): void {

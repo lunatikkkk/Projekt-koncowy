@@ -1,3 +1,2 @@
 <h1>My Hangar</h1>
-<app-space-ships></app-space-ships>
-<app-space-ships2></app-space-ships2>
+<app-space-ships *ngFor="let spaceShip of spaceShips" [spaceShip]="spaceShip"></app-space-ships>
