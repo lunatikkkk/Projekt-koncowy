@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MySpace-mgn-app": {
+    "space-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/MySpace-mgn-app",
+            "outputPath": "dist/space-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "MySpace-mgn-app:build"
+            "browserTarget": "space-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "MySpace-mgn-app:build:production"
+              "browserTarget": "space-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MySpace-mgn-app:build"
+            "browserTarget": "space-app:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "MySpace-mgn-app:serve"
+            "devServerTarget": "space-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "MySpace-mgn-app:serve:production"
+              "devServerTarget": "space-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "MySpace-mgn-app"
+  "defaultProject": "space-app"
 }

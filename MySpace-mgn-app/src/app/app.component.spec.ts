@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'MySpace-mgn-app'`, () => {
+  it(`should have as title 'space-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('MySpace-mgn-app');
+    expect(app.title).toEqual('space-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('MySpace-mgn-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('space-app app is running!');
   });
 });

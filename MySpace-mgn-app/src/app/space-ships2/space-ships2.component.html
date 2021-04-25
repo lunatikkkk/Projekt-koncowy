@@ -1,0 +1,17 @@
+<h4>{{spaceShip2.modelName}}</h4>
+
+<div>
+    <img [src]="spaceShip2.imageUrl" alt="">
+</div>
+
+<div class="health" [title]=" 'Health' + spaceShip2.health + '%'">
+    <div [style.width.%]="spaceShip2.health"></div>
+</div>
+
+<div class="property" [class.active]="spaceShip2.activeShield">
+    SHIELD
+</div>
+
+<div class="property" [class.active]="spaceShip2.activeWeapon">
+    WEAPONS
+</div>
